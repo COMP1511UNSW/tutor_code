@@ -1,0 +1,11 @@
+#!/bin/bash
+
+umask 022
+
+
+echo "Entering a child shell -- CAREFUL!"
+echo "Files changed here will be public to students!"
+
+cd /web/cs1511/22T2/tutor_code && bash
+
+echo "Goodbye!"
