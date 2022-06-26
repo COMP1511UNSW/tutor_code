@@ -11,7 +11,7 @@ export UNISON=`pwd`
 
 unison sync -batch
 
-cd $SCRIPTPATH
+cd $SCRIPTPATH/..
 
 git add .
 

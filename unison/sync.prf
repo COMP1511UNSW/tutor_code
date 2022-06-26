@@ -1,0 +1,13 @@
+label = COMP1511 Tutors
+
+root = /home/cs1511/public_html/22T2/tutor_code
+root = /home/cs1511/public_html/22T2/tutor_code/Repo/tutor_code/
+
+ignore=Name Repo
+ignore=Name .git
+ignore=Name scripts
+ignore=Name unison
+ignore=Name README.md
+ignore=Name *.out
+
+maxsizethreshold=100
