@@ -1,0 +1,3 @@
+#!/bin/bash
+
+GIT_SSH_COMMAND='ssh -i /web/cs1511/tutor_code/Repo/id_rsa' git
