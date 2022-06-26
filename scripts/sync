@@ -1,0 +1,20 @@
+#!/bin/bash -eux
+
+SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+cd $SCRIPTPATH
+
+git pull
+
+cd ../../unison
+
+export UNISON=`pwd`
+
+unison sync -batch
+
+cd $SCRIPTPATH
+
+git add .
+
+git commit -m "Unison Sync"
+
+git push
