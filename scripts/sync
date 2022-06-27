@@ -6,12 +6,14 @@ SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 cd $SCRIPTPATH/..
 
 # 1. Sync the repo with this code.
+echo "Sync repo with code"
 
 git stash
 git pull --rebase
 git stash pop
 
 # 2. Sync the "public" version with the repo.
+echo "Sync public with repo"
 cd $SCRIPTPATH/../../unison
 
 export UNISON=`pwd`
@@ -19,6 +21,7 @@ export UNISON=`pwd`
 unison sync -batch
 
 # 3. Push local changes to the repo.
+echo "Push local changes"
 
 cd $SCRIPTPATH/..
 
