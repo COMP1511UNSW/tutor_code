@@ -10,7 +10,7 @@ echo "Sync repo with code"
 
 git stash
 git pull --rebase
-git stash pop
+git stash pop || echo "Did not stash anything"
 
 # 2. Sync the "public" version with the repo.
 echo "Sync public with repo"
