@@ -28,6 +28,9 @@ void dynamic_memory(int size) {
 
     // Make that array twice as long.
     // realloc(pointer, new_size);
+    // realloc will create the new block of memory with the 
+    // larger size and copy the old data to that newly allocated 
+    // memory and than it will deallocate the old memory area.
     array = realloc(array, size * 2);
 
     // Set all the new and undefined values of the array to 1.
