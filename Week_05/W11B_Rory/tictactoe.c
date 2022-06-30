@@ -62,14 +62,11 @@ int did_player_win(char player, char board[SIZE][SIZE]) {
     // 2. a full col
     // 3. y = -x
     // 4. y = x
-    if (
+    return (
         check_rows(player, board) || 
         check_cols(player, board) || 
         check_diagonals(player, board)
-    ) {
-        return 1;
-    }
-    return 0;
+    );
 }
 
 // Check if there is a full row of the given player type.

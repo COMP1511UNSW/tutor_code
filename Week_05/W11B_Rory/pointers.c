@@ -4,22 +4,26 @@ int main(void) {
 
     // Create an int variable;
     // Address 0xFF00
-    int var = 3;
+    int var = 2;
 
     // Creating an int pointer -> ptr;
     int *ptr;
     
-    // Print the address that ptr stores;
+    // Getting the address of a variable;
     ptr = &var;
 
-    // Getting the address of a variable;
+    // Print the address that ptr stores;
     // Prints out 0xFF00 (which is the address of
     // var).
-    printf("%p\n", ptr);
-    
+    printf("Address that ptr stores: %p\n", ptr);
+
     // Accessing memory via a pointer;
-    // Prints out the value of var which is 3.
-    printf("%d\n", *ptr);
+    // Prints out the value of var which is 2.
+    printf("Value that is stored at the address: %d\n", *ptr);
+
+    *ptr = 22;
+
+    printf("Value of var: %d\n", var);
 
     return 0;
 }
