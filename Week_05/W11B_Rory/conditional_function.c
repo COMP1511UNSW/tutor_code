@@ -4,7 +4,7 @@ int is_a_letter(char ch);
 
 int main(void) {
 
-    int ch = 'b';
+    char ch = 'b';
 
     printf("Is %c a letter?\n", ch);
     if (is_a_letter(ch)) {
