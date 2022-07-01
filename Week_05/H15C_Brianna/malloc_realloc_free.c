@@ -14,6 +14,7 @@ void dynamic_memory(int size) {
 
     // Create a dynamic array of integers, that is exactly `size`
     // integers long.
+    // Malloc takes in the number of bytes of memory you want to allocate.
     int *array = malloc(sizeof(int) * size);
 
     // Set all the integers in that array to 0.
@@ -31,7 +32,7 @@ void dynamic_memory(int size) {
     // realloc will create the new block of memory with the 
     // larger size and copy the old data to that newly allocated 
     // memory and then it will deallocate the old memory area.
-    array = realloc(array, size * 2);
+    array = realloc(array, sizeof(int) * (size * 2));
 
     // Set all the new and undefined values of the array to 1.
     int j = size;
