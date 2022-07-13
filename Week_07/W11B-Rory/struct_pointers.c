@@ -30,6 +30,8 @@ int main(void) {
 	
 	swap_gear(&first_member, &second_member);
 	
+	// Realistically want to check all fields for success but
+	// this is done for the interest of time.	
 	if (first_member.weapon == no_weapon) {
 	    printf("success\n");
 	} else {
